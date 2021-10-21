@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Select what animal to view</h1>
+
+      <form id="form1">
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="toucan" checked />
+            Sloth
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="sloth" />
+            Howler Monkey
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="howlermonkey" />
+            Tucan
+          </label>
+        </div>
+      </form>
+
+      <img src="js/img/toucan.jpg" alt="toucan" id="toucan" />
+      <img src="js/img/sloths.jpg" alt="sloth" id="sloths" />
+      <img src="js/img/howlermonkey.jpg" alt="howlermonkey" id="howlermonkey" />
+
+      <div>
+        <button type="submit" class="btn">See Picture</button>
+      </div>
+    </div>
+  </body>
+</html>
