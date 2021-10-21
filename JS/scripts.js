@@ -1,6 +1,19 @@
 $(document).ready(function() {
   $("#form1").submit(function(event) {
-  const animal = $("input:radio[name=animal]:checked").val();
-  console.log(animal);
+    event.preventDefault();
+    const animal = $("input:radio[name=animal]:checked").val();
+
+    $("#sloth").hide();
+    $("#toucan").hide();
+    $("#howlermonkey").hide();
+    
+    if (animal === "toucan") {
+      $("#toucan").show();
+    } else if (animal === "sloth") {
+      $("#sloth").show();
+    } else {
+      $("#howlermonkey").show();
+    }
+    
   });
 });
